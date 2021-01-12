@@ -55,7 +55,7 @@ class SessionsController < ApplicationController
             #     image_url: user.image_url,
             #     twitter_link: user.username
             # }
-            redirect_to 'https://shill.lol'
+            redirect_to 'https://app.shill.lol'
         else
             user = User.create!(
                 uid: twitter_uid,
@@ -73,7 +73,7 @@ class SessionsController < ApplicationController
                     #     image_url: user.image_url,
                     #     twitter_link: user.username
                     # }
-                    redirect_to 'https://shill.lol'
+                    redirect_to 'https://app.shill.lol'
                 else
                     render json: { status: 500 }
                 end
